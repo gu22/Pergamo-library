@@ -1,0 +1,353 @@
+[Root]
+Most Recent Package=Pergamo
+
+
+[Package|Setup Pérgamo Library|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Users\Gustavo\Documents\Programa VB\Package
+
+[Package|Setup Pérgamo Library|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=No
+
+[Package|Setup Pérgamo Library|Configure DAO ODBC]
+JetWorkspace=No
+ODBCDirect=No
+
+[Package|Setup Pérgamo Library|Files Found]
+
+[Package|Setup Pérgamo Library|Files Released]
+
+[Package|Setup Pérgamo Library|Missing Dependency Information]
+
+[Package|Setup Pérgamo Library|Out-of-Date Dependency Information]
+
+[Package|Setup Pérgamo Library|Files Added]
+
+[Package|Setup Pérgamo Library|Files Removed]
+
+[Package|Setup Pérgamo Library|Files In Project]
+C:\Users\Gustavo\Documents\Programa VB\Pérgamo.exe=Yes
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Windows\System32\oleaut32.dll=Yes
+C:\Windows\System32\olepro32.dll=Yes
+C:\Windows\System32\asycfilt.dll=Yes
+C:\Windows\System32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Common Files\microsoft shared\DAO\DAO350.DLL=Yes
+C:\Windows\System32\MSJET35.DLL=Yes
+C:\Windows\System32\MSJTER35.DLL=Yes
+C:\Windows\System32\MSJINT35.DLL=Yes
+C:\Windows\System32\vbajet32.dll=Yes
+C:\Windows\System32\expsrv.dll=Yes
+C:\Windows\System32\MSRD2X35.DLL=Yes
+C:\Windows\System32\MSREPL35.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\Windows\System32\VB5DB.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\System32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Setup Pérgamo Library|Configure Registry Files]
+Applicable=No
+
+[Package|Setup Pérgamo Library|Configure Remote Servers]
+Applicable=No
+
+[Package|Setup Pérgamo Library|Install Locations]
+C:\Users\Gustavo\Documents\Programa VB\Pérgamo.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Windows\System32\oleaut32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\olepro32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\asycfilt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Common Files\microsoft shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\Windows\System32\MSJET35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSJTER35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSJINT35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\vbajet32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\expsrv.dll=$(WinSysPathSysFile)
+C:\Windows\System32\MSRD2X35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSREPL35.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\VB5DB.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Setup Pérgamo Library|Configure Shared Files]
+Applicable=Yes
+C:\Users\Gustavo\Documents\Programa VB\Pérgamo.exe=Yes
+
+[Package|Setup Pérgamo Library|Distribution]
+Type=single
+Size=
+Title= Pérgamo Library
+
+[Package|Setup Pérgamo Library|IconGroups]
+Group0=Pérgamo Library
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Setup Pérgamo Library|Pérgamo Library]
+Icon1=Pérgamo.exe
+Title1= Pérgamo Library
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Setup Pérgamo Library|Package]
+PackageFolder=C:\Users\Gustavo\Documents\Programa VB\Package
+ProjectFolder=C:\Users\Gustavo\Documents\Programa VB
+ServerSideCab=
+File1=C:\Users\Gustavo\Documents\Programa VB\Package\setup.exe
+File2=C:\Users\Gustavo\Documents\Programa VB\Package\Setup.Lst
+File3=C:\Users\Gustavo\Documents\Programa VB\Package\Pérgamo.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|Pérgamo Library|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Users\Gustavo\Documents\Programa VB\Package
+
+[Package|Pérgamo Library|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=Yes
+
+[Package|Pérgamo Library|Configure DAO ODBC]
+JetWorkspace=Yes
+ODBCDirect=Yes
+
+[Package|Pérgamo Library|Files Found]
+
+[Package|Pérgamo Library|Files Released]
+
+[Package|Pérgamo Library|Missing Dependency Information]
+
+[Package|Pérgamo Library|Out-of-Date Dependency Information]
+C:\Windows\System32\MSRDO20.DLL=
+
+[Package|Pérgamo Library|Files Added]
+
+[Package|Pérgamo Library|Files Removed]
+
+[Package|Pérgamo Library|Files In Project]
+C:\Users\Gustavo\Documents\Programa VB\Pérgamo.exe=Yes
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Windows\System32\oleaut32.dll=Yes
+C:\Windows\System32\olepro32.dll=Yes
+C:\Windows\System32\asycfilt.dll=Yes
+C:\Windows\System32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Common Files\microsoft shared\DAO\DAO350.DLL=Yes
+C:\Windows\System32\MSJET35.DLL=Yes
+C:\Windows\System32\MSJTER35.DLL=Yes
+C:\Windows\System32\MSJINT35.DLL=Yes
+C:\Windows\System32\vbajet32.dll=Yes
+C:\Windows\System32\expsrv.dll=Yes
+C:\Windows\System32\MSRD2X35.DLL=Yes
+C:\Windows\System32\MSREPL35.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\Windows\System32\VB5DB.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\System32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Windows\System32\MSRDO20.DLL=Yes
+C:\Windows\System32\RDOCURS.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+
+[Package|Pérgamo Library|Configure Registry Files]
+Applicable=No
+
+[Package|Pérgamo Library|Configure Remote Servers]
+Applicable=No
+
+[Package|Pérgamo Library|Install Locations]
+C:\Users\Gustavo\Documents\Programa VB\Pérgamo.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Windows\System32\oleaut32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\olepro32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\asycfilt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Common Files\microsoft shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\Windows\System32\MSJET35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSJTER35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSJINT35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\vbajet32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\expsrv.dll=$(WinSysPathSysFile)
+C:\Windows\System32\MSRD2X35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSREPL35.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\VB5DB.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Windows\System32\MSRDO20.DLL=$(WinSysPath)
+C:\Windows\System32\RDOCURS.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+
+[Package|Pérgamo Library|Configure Shared Files]
+Applicable=Yes
+C:\Users\Gustavo\Documents\Programa VB\Pérgamo.exe=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+
+[Package|Pérgamo Library|Distribution]
+Type=single
+Size=
+Title= Pérgamo Library
+
+[Package|Pérgamo Library|Package]
+PackageFolder=C:\Users\Gustavo\Documents\Programa VB\Package
+ProjectFolder=C:\Users\Gustavo\Documents\Programa VB
+ServerSideCab=
+File1=C:\Users\Gustavo\Documents\Programa VB\Package\setup.exe
+File2=C:\Users\Gustavo\Documents\Programa VB\Package\Setup.Lst
+File3=C:\Users\Gustavo\Documents\Programa VB\Package\Pérgamo.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|Pérgamo Library|IconGroups]
+Group0=Pérgamo Library
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Pérgamo Library|Pérgamo Library]
+Icon1=Pérgamo.exe
+Title1= Pérgamo Library
+StartIn1=$(AppPath)
+Key1=Icon1
+
+
+[Package|Pergamo|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Arquivos de programas\Pergamo
+
+[Package|Pergamo|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=Yes
+
+[Package|Pergamo|Configure DAO ODBC]
+JetWorkspace=Yes
+ODBCDirect=Yes
+
+[Package|Pergamo|Files Found]
+
+[Package|Pergamo|Files Released]
+
+[Package|Pergamo|Missing Dependency Information]
+
+[Package|Pergamo|Out-of-Date Dependency Information]
+C:\Windows\System32\MSRDO20.DLL=
+
+[Package|Pergamo|Files Added]
+d:\users\gustavo\documents\programa vb\pergamo.mdb=
+
+[Package|Pergamo|Files Removed]
+d:\users\gustavo\documents\programa vb\pergamo.mdb=
+
+[Package|Pergamo|Files In Project]
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Windows\System32\oleaut32.dll=Yes
+C:\Windows\System32\olepro32.dll=Yes
+C:\Windows\System32\asycfilt.dll=Yes
+C:\Windows\System32\stdole2.tlb=Yes
+C:\Windows\System32\MSJET35.DLL=Yes
+C:\Windows\System32\MSJTER35.DLL=Yes
+C:\Windows\System32\MSJINT35.DLL=Yes
+C:\Windows\System32\vbajet32.dll=Yes
+C:\Windows\System32\expsrv.dll=Yes
+C:\Windows\System32\MSRD2X35.DLL=Yes
+C:\Windows\System32\MSREPL35.DLL=Yes
+C:\Windows\System32\VB5DB.DLL=Yes
+C:\Windows\System32\VB6STKIT.DLL=Yes
+C:\Windows\System32\MSRDO20.DLL=Yes
+C:\Windows\System32\RDOCURS.DLL=Yes
+D:\Users\Gustavo\Documents\Programa VB\Pérgamo.exe=Yes
+C:\Arquivos de programas\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\DAO\DAO350.DLL=Yes
+C:\Arquivos de programas\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\Arquivos de programas\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Arquivos de programas\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Arquivos de programas\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Arquivos de programas\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+D:\Users\Gustavo\Documents\Programa VB\Pergamo.mdb=No
+
+[Package|Pergamo|Configure Registry Files]
+Applicable=No
+
+[Package|Pergamo|Configure Remote Servers]
+Applicable=No
+
+[Package|Pergamo|Install Locations]
+C:\Users\Gustavo\Documents\Programa VB\Pérgamo.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Windows\System32\oleaut32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\olepro32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\asycfilt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Common Files\microsoft shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\Windows\System32\MSJET35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSJTER35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSJINT35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\vbajet32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\expsrv.dll=$(WinSysPathSysFile)
+C:\Windows\System32\MSRD2X35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSREPL35.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\VB5DB.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Windows\System32\MSRDO20.DLL=$(WinSysPath)
+C:\Windows\System32\RDOCURS.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+D:\Users\Gustavo\Documents\Programa VB\Pérgamo.exe=$(AppPath)
+C:\Arquivos de programas\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\Arquivos de programas\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Arquivos de programas\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Arquivos de programas\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\Users\Gustavo\Documents\Programa VB\Pergamo.mdb=$(AppPath)
+
+[Package|Pergamo|Configure Shared Files]
+Applicable=Yes
+C:\Users\Gustavo\Documents\Programa VB\Pérgamo.exe=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+D:\Users\Gustavo\Documents\Programa VB\Pérgamo.exe=Yes
+C:\Arquivos de programas\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+D:\Users\Gustavo\Documents\Programa VB\Pergamo.mdb=Yes
+
+[Package|Pergamo|Distribution]
+Type=single
+Size=
+Title= Pérgamo Library
+
+[Package|Pergamo|Package]
+PackageFolder=C:\Arquivos de programas\Pergamo
+ProjectFolder=D:\Users\Gustavo\Documents\Programa VB
+ServerSideCab=
+File1=C:\Arquivos de programas\Pergamo\setup.exe
+File2=C:\Arquivos de programas\Pergamo\Setup.Lst
+File3=C:\Arquivos de programas\Pergamo\Pérgamo.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|Pergamo|IconGroups]
+Group0=Pérgamo Library
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Pergamo|Pérgamo Library]
+Icon1=Pérgamo.exe
+Title1= Pérgamo Library
+StartIn1=$(AppPath)
+Key1=Icon1

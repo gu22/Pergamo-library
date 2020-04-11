@@ -1,0 +1,158 @@
+
+Private Sub Command1_Click()
+Form2.Show
+End Sub
+
+Private Sub Command2_Click()
+Form3.Show
+End Sub
+
+Private Sub Command3_Click()
+Form4.Show
+End Sub
+
+Private Sub Command4_Click()
+MsgBox "Software Freeware feito por Gustavo nº15  2ºAno de Informatica", 64, "Pérgamos Library"
+Form5.Show
+End Sub
+
+Private Sub Command5_Click()
+If MsgBox("Deseja sair?", vbYesNo, "Aviso") = vbYes Then
+End
+End If
+End Sub
+
+Private Sub Command6_Click()
+
+
+'começo:
+
+'usuarios
+stradm = "admin"
+strsuper = "super"
+Strgerente = "gerente"
+
+'senhas
+strsenha1 = "master"
+strsenha2 = "123"
+Strsenha3 = "mestre"
+
+
+
+'montagem
+If Text1 = Empty And Text2 = Empty Then
+MsgBox "informe usuario e senha", vbInformation, "aviso"
+Text1 = ""
+Text2 = ""
+Text1.SetFocus
+Else
+
+
+If Text1 = Empty Then
+MsgBox "informe o nome do usuário", vbInformation, "aviso"
+Text1 = ""
+Text1.SetFocus
+Else
+
+
+If Text2 = Empty Then
+MsgBox "informe a senha", vbInformation, "aviso"
+Text2 = ""
+Text2.SetFocus
+
+
+
+Else
+
+'campo usuario
+
+
+
+If Text1 <> stradm And Text1 <> strsuper And Text1 <> Strgerente Then
+MsgBox "usuario invalido", vbInformation, "aviso"
+Text1 = ""
+Text1.SetFocus
+Else
+
+
+'campo senha
+
+If Text2 <> strsenha1 And Text2 <> strsenha2 And Text2 <> Strsenha3 Then
+MsgBox "senha invalida", vbInformation, "aviso"
+Text2 = ""
+Text2.SetFocus
+
+End If
+End If
+End If
+End If
+End If
+
+
+' abilitaçao dos botoes
+If Text1 = stradm And Text2 = strsenha1 Then
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command7.Enabled = True
+
+Form1.Enabled = True
+Form3.Enabled = True
+Form4.Enabled = True
+
+Else
+If Text1 = strsuper And Text2 = strsenha2 Then
+Command1.Enabled = True
+Command3.Enabled = True
+Command7.Enabled = True
+
+Form2.Enabled = True
+Form3.Enabled = True
+Form4.Enabled = True
+
+Else
+If Text1 = Strgerente And Text2 = Strsenha3 Then
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command7.Enabled = True
+
+
+
+
+
+End If
+End If
+End If
+
+
+End Sub
+
+
+Private Sub Command7_Click()
+Command1.Enabled = False
+Command2.Enabled = False
+Command3.Enabled = False
+Command7.Enabled = False
+Text1 = ""
+Text2 = ""
+Text1.SetFocus
+
+
+
+Unload Form2
+Unload Form3
+Unload Form4
+Unload Form5
+Unload Form6
+Unload Form7
+Unload Form8
+End Sub
+
+Private Sub Form_Load()
+Label4 = Date
+End Sub
+
+Private Sub Timer1_Timer()
+Label7 = Time
+End Sub

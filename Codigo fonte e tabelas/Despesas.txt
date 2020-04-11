@@ -1,0 +1,396 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+Private Sub Command1_Click(Index As Integer)
+If Len(Text2.Text) = Empty Then
+MsgBox "É necessario o nome"
+Text2.SetFocus
+Else
+Data1.UpdateRecord
+End If
+End Sub
+
+
+
+
+
+Private Sub Command2_Click(Index As Integer)
+MsgBox "Alteraçao realizada com sucesso"
+Data1.UpdateRecord
+End Sub
+
+Private Sub Command3_Click(Index As Integer)
+Dim pesquisa As String
+pesquisa = InputBox("Qual o nome Codigo?")
+If pesquisa = "" Then
+Exit Sub
+Else
+Data1.Recordset.FindFirst "Total= '" & pesquisa & "'"
+If Data1.Recordset.NoMatch Then
+MsgBox "registro nao localizado"
+Exit Sub
+End If
+End If
+End Sub
+
+Private Sub Command4_Click()
+Form1.Show
+Unload Form2
+Unload Form3
+Unload Form4
+Unload Form5
+Unload Form6
+Unload Form7
+Unload Form8
+End Sub
+
+Private Sub Command5_Click()
+Data1.Recordset.AddNew
+End Sub
+
+Private Sub menu_alterar_Click()
+MsgBox "Alteraçao realizada com sucesso"
+Data1.UpdateRecord
+End Sub
+
+Private Sub menu_cadastro_Click()
+Form2.Show
+End Sub
+
+Private Sub menu_estoque_Click()
+Form3.Show
+
+End Sub
+
+Private Sub menu_informaçoes_Click()
+Form8.Show
+
+End Sub
+
+Private Sub menu_pesquisar_Click()
+Dim pesquisa As String
+pesquisa = InputBox("Qual o total que procura?")
+If pesquisa = "" Then
+Exit Sub
+Else
+Data1.Recordset.FindFirst "total= '" & pesquisa & "'"
+If Data1.Recordset.NoMatch Then
+MsgBox "Registro nao localizado"
+Exit Sub
+End If
+End If
+End Sub
+
+Private Sub menu_sair_Click()
+If MsgBox("Deseja sair?", vbYesNo, "Aviso") = vbYes Then
+End
+End If
+
+End Sub
+
+Private Sub menu_salvar_Click()
+If Len(Text2.Text) = Empty Then
+MsgBox "É necessario o nome"
+Text2.SetFocus
+Else
+Data1.UpdateRecord
+End If
+End Sub
+
+Private Sub menu_voltar_Click()
+Form1.Show
+Unload Form2
+Unload Form3
+Unload Form4
+Unload Form5
+Unload Form6
+Unload Form7
+Unload Form8
+End Sub
+
+Private Sub Text1_Change()
+Dim n As Integer
+n = Val(Text1.Text)
+Select Case n
+Case 1
+Label2 = " Janeiro"
+Case 2
+Label2 = " Fevereiro"
+Case 3
+Label2 = " Março"
+Case 4
+Label2 = " Abril"
+Case 5
+Label2 = " Maio"
+Case 6
+Label2 = " Junho"
+Case 7
+Label2 = " Julho"
+Case 8
+Label2 = " Agosto"
+Case 9
+Label2 = " Setembro"
+Case 10
+Label2 = " Outubro"
+Case 11
+Label2 = " Novembro"
+Case 12
+Label2 = " Dezembro"
+Case Else
+Label2 = ""
+End Select
+
+End Sub
+
+
+
+
+
+
+'PARTE DA CONTA AUTOMATICA
+
+Private Sub Text10_Change()
+Dim a, b, c, d, e, f, g, h, i, j, k, r As String
+'variaveis
+a = Val(Text3.Text)
+b = Val(Text4.Text)
+c = Val(Text5.Text)
+d = Val(Text6.Text)
+e = Val(Text7.Text)
+f = Val(Text8.Text)
+g = Val(Text9.Text)
+h = Val(Text10.Text)
+i = Val(Text11.Text)
+j = Val(Text12.Text)
+k = Val(Text13.Text)
+'resoluçao
+r = Val(a + b + c + d + e + f + g + h + i + j + k)
+Text14.Text = r
+End Sub
+
+Private Sub Text11_Change()
+Dim a, b, c, d, e, f, g, h, i, j, k, r As String
+'variaveis
+a = Val(Text3.Text)
+b = Val(Text4.Text)
+c = Val(Text5.Text)
+d = Val(Text6.Text)
+e = Val(Text7.Text)
+f = Val(Text8.Text)
+g = Val(Text9.Text)
+h = Val(Text10.Text)
+i = Val(Text11.Text)
+j = Val(Text12.Text)
+k = Val(Text13.Text)
+'resoluçao
+r = Val(a + b + c + d + e + f + g + h + i + j + k)
+Text14.Text = r
+End Sub
+
+Private Sub Text12_Change()
+Dim a, b, c, d, e, f, g, h, i, j, k, r As String
+'variaveis
+a = Val(Text3.Text)
+b = Val(Text4.Text)
+c = Val(Text5.Text)
+d = Val(Text6.Text)
+e = Val(Text7.Text)
+f = Val(Text8.Text)
+g = Val(Text9.Text)
+h = Val(Text10.Text)
+i = Val(Text11.Text)
+j = Val(Text12.Text)
+k = Val(Text13.Text)
+'resoluçao
+r = Val(a + b + c + d + e + f + g + h + i + j + k)
+Text14.Text = r
+End Sub
+
+
+
+
+
+
+
+
+Private Sub Text13_Change()
+Dim a, b, c, d, e, f, g, h, i, j, k, r As String
+'variaveis
+a = Val(Text3.Text)
+b = Val(Text4.Text)
+c = Val(Text5.Text)
+d = Val(Text6.Text)
+e = Val(Text7.Text)
+f = Val(Text8.Text)
+g = Val(Text9.Text)
+h = Val(Text10.Text)
+i = Val(Text11.Text)
+j = Val(Text12.Text)
+k = Val(Text13.Text)
+'resoluçao
+r = Val(a + b + c + d + e + f + g + h + i + j + k)
+Text14.Text = r
+End Sub
+
+Private Sub Text14_Change()
+Dim a, b, c, d, e, f, g, h, i, j, k, r As String
+'variaveis
+a = Val(Text3.Text)
+b = Val(Text4.Text)
+c = Val(Text5.Text)
+d = Val(Text6.Text)
+e = Val(Text7.Text)
+f = Val(Text8.Text)
+g = Val(Text9.Text)
+h = Val(Text10.Text)
+i = Val(Text11.Text)
+j = Val(Text12.Text)
+k = Val(Text13.Text)
+'resoluçao
+r = Val(a + b + c + d + e + f + g + h + i + j + k)
+Text14.Text = r
+
+End Sub
+
+Private Sub Text3_Change()
+Dim a, b, c, d, e, f, g, h, i, j, k, r As String
+'variaveis
+a = Val(Text3.Text)
+b = Val(Text4.Text)
+c = Val(Text5.Text)
+d = Val(Text6.Text)
+e = Val(Text7.Text)
+f = Val(Text8.Text)
+g = Val(Text9.Text)
+h = Val(Text10.Text)
+i = Val(Text11.Text)
+j = Val(Text12.Text)
+k = Val(Text13.Text)
+'resoluçao
+r = Val(a + b + c + d + e + f + g + h + i + j + k)
+Text14.Text = r
+End Sub
+
+Private Sub Text4_Change()
+Dim a, b, c, d, e, f, g, h, i, j, k, r As String
+'variaveis
+a = Val(Text3.Text)
+b = Val(Text4.Text)
+c = Val(Text5.Text)
+d = Val(Text6.Text)
+e = Val(Text7.Text)
+f = Val(Text8.Text)
+g = Val(Text9.Text)
+h = Val(Text10.Text)
+i = Val(Text11.Text)
+j = Val(Text12.Text)
+k = Val(Text13.Text)
+'resoluçao
+r = Val(a + b + c + d + e + f + g + h + i + j + k)
+Text14.Text = r
+End Sub
+
+Private Sub Text5_Change()
+Dim a, b, c, d, e, f, g, h, i, j, k, r As String
+'variaveis
+a = Val(Text3.Text)
+b = Val(Text4.Text)
+c = Val(Text5.Text)
+d = Val(Text6.Text)
+e = Val(Text7.Text)
+f = Val(Text8.Text)
+g = Val(Text9.Text)
+h = Val(Text10.Text)
+i = Val(Text11.Text)
+j = Val(Text12.Text)
+k = Val(Text13.Text)
+'resoluçao
+r = Val(a + b + c + d + e + f + g + h + i + j + k)
+Text14.Text = r
+End Sub
+
+Private Sub Text6_Change()
+Dim a, b, c, d, e, f, g, h, i, j, k, r As String
+'variaveis
+a = Val(Text3.Text)
+b = Val(Text4.Text)
+c = Val(Text5.Text)
+d = Val(Text6.Text)
+e = Val(Text7.Text)
+f = Val(Text8.Text)
+g = Val(Text9.Text)
+h = Val(Text10.Text)
+i = Val(Text11.Text)
+j = Val(Text12.Text)
+k = Val(Text13.Text)
+'resoluçao
+r = Val(a + b + c + d + e + f + g + h + i + j + k)
+Text14.Text = r
+End Sub
+
+Private Sub Text7_Change()
+Dim a, b, c, d, e, f, g, h, i, j, k, r As String
+'variaveis
+a = Val(Text3.Text)
+b = Val(Text4.Text)
+c = Val(Text5.Text)
+d = Val(Text6.Text)
+e = Val(Text7.Text)
+f = Val(Text8.Text)
+g = Val(Text9.Text)
+h = Val(Text10.Text)
+i = Val(Text11.Text)
+j = Val(Text12.Text)
+k = Val(Text13.Text)
+'resoluçao
+r = Val(a + b + c + d + e + f + g + h + i + j + k)
+Text14.Text = r
+End Sub
+
+Private Sub Text8_Change()
+Dim a, b, c, d, e, f, g, h, i, j, k, r As String
+'variaveis
+a = Val(Text3.Text)
+b = Val(Text4.Text)
+c = Val(Text5.Text)
+d = Val(Text6.Text)
+e = Val(Text7.Text)
+f = Val(Text8.Text)
+g = Val(Text9.Text)
+h = Val(Text10.Text)
+i = Val(Text11.Text)
+j = Val(Text12.Text)
+k = Val(Text13.Text)
+'resoluçao
+r = Val(a + b + c + d + e + f + g + h + i + j + k)
+Text14.Text = r
+End Sub
+
+Private Sub Text9_Change()
+Dim a, b, c, d, e, f, g, h, i, j, k, r As String
+'variaveis
+a = Val(Text3.Text)
+b = Val(Text4.Text)
+c = Val(Text5.Text)
+d = Val(Text6.Text)
+e = Val(Text7.Text)
+f = Val(Text8.Text)
+g = Val(Text9.Text)
+h = Val(Text10.Text)
+i = Val(Text11.Text)
+j = Val(Text12.Text)
+k = Val(Text13.Text)
+'resoluçao
+r = Val(a + b + c + d + e + f + g + h + i + j + k)
+Text14.Text = r
+End Sub

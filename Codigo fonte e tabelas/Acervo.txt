@@ -1,0 +1,119 @@
+Private Sub Command1_Click()
+If Len(Text2.Text) = Empty Then
+MsgBox "É necessario o nome"
+Text2.SetFocus
+Else
+Data1.UpdateRecord
+End If
+End Sub
+
+Private Sub Command2_Click()
+Data1.Recordset.AddNew
+End Sub
+
+Private Sub Command3_Click()
+Dim pesquisa As String
+pesquisa = InputBox("Qual o autor?")
+If pesquisa = "" Then
+Exit Sub
+Else
+Data1.Recordset.FindFirst "autor= '" & pesquisa & "'"
+If Data1.Recordset.NoMatch Then
+MsgBox "Registro nao localizado"
+Exit Sub
+End If
+End If
+End Sub
+
+
+Private Sub Command4_Click()
+MsgBox "Alteraçao realizada com sucesso"
+Data1.UpdateRecord
+End Sub
+
+Private Sub Command5_Click()
+Dim excluir As String
+excluir = MsgBox("Deseja excluir este registro?", vbQuestion + vbYesNo, "cadastro")
+If excluir <> vbYes Then
+Exit Sub
+Else
+Data1.Recordset.Delete
+Data1.Refresh
+End If
+
+End Sub
+
+Private Sub Command6_Click()
+Form1.Show
+Unload Form2
+Unload Form3
+Unload Form4
+Unload Form5
+Unload Form6
+Unload Form7
+Unload Form8
+End Sub
+
+Private Sub menu_alterar_Click()
+MsgBox "Alteraçao realizada com sucesso"
+Data1.UpdateRecord
+End Sub
+
+
+
+Private Sub menu_cadastro_Click()
+Form2.Show
+
+End Sub
+
+Private Sub menu_despeza_Click()
+Form4.Show
+End Sub
+
+Private Sub menu_informaçoes_Click()
+Form7.Show
+End Sub
+
+Private Sub menu_novo_Click()
+Data1.Recordset.AddNew
+End Sub
+
+Private Sub menu_pesquisar_Click()
+Dim pesquisa As String
+pesquisa = InputBox("Qual o nome autor?")
+If pesquisa = "" Then
+Exit Sub
+Else
+Data1.Recordset.FindFirst "autor= '" & pesquisa & "'"
+If Data1.Recordset.NoMatch Then
+MsgBox "Registro nao localizado"
+Exit Sub
+End If
+End If
+End Sub
+
+Private Sub menu_sair_Click()
+If MsgBox("Deseja sair?", vbYesNo, "Aviso") = vbYes Then
+End
+End If
+End Sub
+
+Private Sub menu_salvar_Click()
+If Len(Text2.Text) = Empty Then
+MsgBox "É necessario o nome"
+Text2.SetFocus
+Else
+Data1.UpdateRecord
+End If
+End Sub
+
+Private Sub menu_voltar_Click()
+Form1.Show
+Unload Form2
+Unload Form3
+Unload Form4
+Unload Form5
+Unload Form6
+Unload Form7
+Unload Form8
+End Sub
